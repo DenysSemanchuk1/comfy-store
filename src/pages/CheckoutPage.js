@@ -7,15 +7,6 @@ import { Link } from "react-router-dom";
 
 const CheckoutPage = () => {
   const { total_items: cart } = useCartContext();
-  if (cart.length < 1) {
-    return (
-      <Wrapper>
-        <h1>Your cart is empty</h1>
-        <Link to='/products'>fill it</Link>
-      </Wrapper>
-    );
-  }
-
   return (
     <main>
       <PageHero title='checkout' />
